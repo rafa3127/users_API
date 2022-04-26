@@ -32,7 +32,6 @@ Para el funcionamiento del servidor, debe crearse un archivo .env en la raíz de
 **Crear Usuario**
 
 
-`
 POST /api/users
 
 
@@ -40,6 +39,7 @@ headers {Content-Type: application/json}
 
 
 body {  
+
         > "firstName": String,  
         > "lastName": String,  
         > "dni": String,  
@@ -48,33 +48,33 @@ body {
         > "status": String (active || pending),  
         > "password": String,  
         > "userName": String  
+        
     }  
-`
+
 
 **Obtener Usuario por ID**
 
 
-`
+
 GET /api/users/:id
 
 
 headers{Authorization: Bearer ${token}}
-`
+
 
 **Obtener todos los usuarios (filtrados por género o estatus)**
 
 
-`
+
 GET /api/users?gender=${valor de filtro para género}&status=${valor de filtro para estatus}
 
 
 headers{Authorization: Bearer ${token}}
-`
+
 
 **Actualizar usuario**
 
 
-`
 PUT /api/users/:id
 
 
@@ -91,25 +91,26 @@ body: {
         "status": String (active || pending),
         "userName": String
     }
-`
+
 
 **Eliminar usuario por ID**
 
 
-`
+
 DELETE /api/users/:id
 headers{Authorization: Bearer ${token}}
-`
+
 
 ## Responses
 
 
 Todas las respuestas guardan la misma estrutura JSON, además del estatus code correspondiente:
-`
+
+
 {
     type: ("error" || "success" ), 
     msg: (null || string), 
     data: (null || Object)
 }
-`
+
 
