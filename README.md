@@ -21,9 +21,9 @@ Para su desarrollo se utiliza
 Para el funcionamiento del servidor, debe crearse un archivo .env en la raíz de la ruta que contenga las siguientes variables de enterno:
 
 
-**PORT** (Puerto que escuchará el servidor)
-**JWT_SECRET_WORD** (Palabra secreta para cifrado de JWT)
-**MONGO_DB_URI** (Cadena de conexión de una base de datos de mongoDB)
+* **PORT** (Puerto que escuchará el servidor)
+* **JWT_SECRET_WORD** (Palabra secreta para cifrado de JWT)
+* **MONGO_DB_URI** (Cadena de conexión de una base de datos de mongoDB)
 
 
 ## Peticiones
@@ -33,18 +33,18 @@ Para el funcionamiento del servidor, debe crearse un archivo .env en la raíz de
 
 
 `
-POST /api/users
-headers {Content-Type: application/json}
-body {
-        "firstName": String,
-        "lastName": String,
-        "dni": String,
-        "gender": String (M || F),
-        "phone": String,
-        "status": String (active || pending),
-        "password": String,
-        "userName": String
-    }
+POST /api/users  
+headers {Content-Type: application/json}  
+body {  
+        "firstName": String,  
+        "lastName": String,  
+        "dni": String,  
+        "gender": String (M || F),  
+        "phone": String,  
+        "status": String (active || pending),  
+        "password": String,  
+        "userName": String  
+    }  
 `
 
 **Obtener Usuario por ID**
