@@ -33,7 +33,9 @@ Para el funcionamiento del servidor, debe crearse un archivo .env en la raíz de
 
 
 POST /api/users
+
 headers {Content-Type: application/json}
+
 body {  
 
         "firstName": String,  
