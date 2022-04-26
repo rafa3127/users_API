@@ -33,9 +33,7 @@ Para el funcionamiento del servidor, debe crearse un archivo .env en la raíz de
 
 
 POST /api/users
-
 headers {Content-Type: application/json}
-
 body {  
 
         "firstName": String,  
@@ -110,7 +108,7 @@ Todas las respuestas guardan la misma estrutura JSON, además del estatus code c
     type: ("error" || "success" ), 
     msg: (null || string), 
     data: (null || Object)
-    
+
 }
 
 
