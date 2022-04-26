@@ -4,16 +4,16 @@ En este repositorio hay una API básica desarrollada con REST, que hace un CRUD 
 
 ### TECH STACK
 
-*Para su desarrollo se utiliza 
-*NodeJS con ExpressJS
-*MongoDB como base de datos
+Para su desarrollo se utiliza 
+* NodeJS con ExpressJS
+* MongoDB como base de datos
 
 **Librerías**
 
 
-bcrypt para hasheado de contraseñas
-mongoose para gestionar la base de datos con modelos predeterminados
-jsonwebtoken para la generación de tokens de acceso con JWT
+* bcrypt para hasheado de contraseñas
+* mongoose para gestionar la base de datos con modelos predeterminados
+* jsonwebtoken para la generación de tokens de acceso con JWT
 
 ## Archivo .env | Variables de Entorno
 
