@@ -39,16 +39,14 @@ headers {Content-Type: application/json}
 
 
 body {  
-
-        > "firstName": String,  
-        > "lastName": String,  
-        > "dni": String,  
-        > "gender": String (M || F),  
-        > "phone": String,  
-        > "status": String (active || pending),  
-        > "password": String,  
-        > "userName": String  
-        
+        "firstName": String,  
+        "lastName": String,  
+        "dni": String,  
+        "gender": String (M || F),  
+        "phone": String,  
+        "status": String (active || pending),  
+        "password": String,  
+        "userName": String  
     }  
 
 
