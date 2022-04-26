@@ -34,9 +34,7 @@ Para el funcionamiento del servidor, debe crearse un archivo .env en la raíz de
 
 POST /api/users
 
-
 headers {Content-Type: application/json}
-
 
 body {  
 
@@ -48,16 +46,14 @@ body {
         "status": String (active || pending),  
         "password": String,  
         "userName": String  
-        
+
     }  
 
 
 **Obtener Usuario por ID**
 
 
-
 GET /api/users/:id
-
 
 headers{Authorization: Bearer ${token}}
 
@@ -65,9 +61,7 @@ headers{Authorization: Bearer ${token}}
 **Obtener todos los usuarios (filtrados por género o estatus)**
 
 
-
 GET /api/users?gender=${valor de filtro para género}&status=${valor de filtro para estatus}
-
 
 headers{Authorization: Bearer ${token}}
 
@@ -77,12 +71,16 @@ headers{Authorization: Bearer ${token}}
 
 PUT /api/users/:id
 
-
 headers {   
+
             Content-Type: application/json,
             Authorization: Bearer ${token}
+
         }
+
+
 body: {
+
         "firstName": String,
         "lastName": String,
         "dni": String,
@@ -90,11 +88,11 @@ body: {
         "phone": String,
         "status": String (active || pending),
         "userName": String
+
     }
 
 
 **Eliminar usuario por ID**
-
 
 
 DELETE /api/users/:id
@@ -108,9 +106,11 @@ Todas las respuestas guardan la misma estrutura JSON, además del estatus code c
 
 
 {
+
     type: ("error" || "success" ), 
     msg: (null || string), 
     data: (null || Object)
+    
 }
 
 
