@@ -33,17 +33,21 @@ Para el funcionamiento del servidor, debe crearse un archivo .env en la raíz de
 
 
 `
-POST /api/users  
-headers {Content-Type: application/json}  
+POST /api/users
+
+
+headers {Content-Type: application/json}
+
+
 body {  
-        "firstName": String,  
-        "lastName": String,  
-        "dni": String,  
-        "gender": String (M || F),  
-        "phone": String,  
-        "status": String (active || pending),  
-        "password": String,  
-        "userName": String  
+        > "firstName": String,  
+        > "lastName": String,  
+        > "dni": String,  
+        > "gender": String (M || F),  
+        > "phone": String,  
+        > "status": String (active || pending),  
+        > "password": String,  
+        > "userName": String  
     }  
 `
 
@@ -52,6 +56,8 @@ body {
 
 `
 GET /api/users/:id
+
+
 headers{Authorization: Bearer ${token}}
 `
 
@@ -60,6 +66,8 @@ headers{Authorization: Bearer ${token}}
 
 `
 GET /api/users?gender=${valor de filtro para género}&status=${valor de filtro para estatus}
+
+
 headers{Authorization: Bearer ${token}}
 `
 
@@ -68,6 +76,8 @@ headers{Authorization: Bearer ${token}}
 
 `
 PUT /api/users/:id
+
+
 headers {   
             Content-Type: application/json,
             Authorization: Bearer ${token}
