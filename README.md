@@ -34,9 +34,16 @@ Para el funcionamiento del servidor, debe crearse un archivo .env en la raíz de
 
 POST /api/users
 
-headers {Content-Type: application/json}
+headers 
+    {
+        
+        Content-Type: application/json
+        
+    }
 
-body {  
+body 
+
+    {  
 
         "firstName": String,  
         "lastName": String,  
@@ -55,7 +62,12 @@ body {
 
 GET /api/users/:id
 
-headers{Authorization: Bearer ${token}}
+headers
+    {
+        
+        Authorization: Bearer ${token}
+    
+    }
 
 
 **Obtener todos los usuarios (filtrados por género o estatus)**
@@ -63,7 +75,12 @@ headers{Authorization: Bearer ${token}}
 
 GET /api/users?gender=${valor de filtro para género}&status=${valor de filtro para estatus}
 
-headers{Authorization: Bearer ${token}}
+headers
+    {
+        
+        Authorization: Bearer ${token}
+        
+    }
 
 
 **Actualizar usuario**
