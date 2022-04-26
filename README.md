@@ -120,6 +120,7 @@ body
 
 
 DELETE /api/users/:id
+
 headers
 
     {
@@ -135,12 +136,12 @@ headers
 Todas las respuestas guardan la misma estrutura JSON, además del estatus code correspondiente:
 
 
-{
+    {
 
-    type: ("error" || "success" ), 
-    msg: (null || string), 
-    data: (null || Object)
+        type: ("error" || "success" ), 
+        msg: (null || string), 
+        data: (null || Object)
 
-}
+    }
 
 
