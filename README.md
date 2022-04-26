@@ -39,6 +39,7 @@ headers {Content-Type: application/json}
 
 
 body {  
+
         "firstName": String,  
         "lastName": String,  
         "dni": String,  
@@ -47,6 +48,7 @@ body {
         "status": String (active || pending),  
         "password": String,  
         "userName": String  
+        
     }  
 
 
